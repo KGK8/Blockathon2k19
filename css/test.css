@@ -1,0 +1,233 @@
+textarea {
+  min-height: 25.6rem;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  color: #000000;
+  box-shadow: 0 0 5px rgba(91, 79, 150, 0.8);
+  border: 1px solid #5b4f96;
+}
+
+label,
+legend {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: .8rem;
+  color: #000000;
+  display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-text {
+  display: inline-block;
+  margin-left: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: inherit;
+}
+
+label > input[type="checkbox"],
+label > input[type="radio"] {
+  margin: 0;
+  position: relative;
+  top: .2rem;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## Style Placeholder Text
+ * ------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+
+  /* WebKit, Blink, Edge */
+  color: #9c9c9c;
+}
+
+:-moz-placeholder {
+
+  /* Mozilla Firefox 4 to 18 */
+  color: #9c9c9c;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+
+  /* Mozilla Firefox 19+ */
+  color: #9c9c9c;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+
+  /* Internet Explorer 10-11 */
+  color: #9c9c9c;
+}
+
+::-ms-input-placeholder {
+
+  /* Microsoft Edge */
+  color: #9c9c9c;
+}
+
+::placeholder {
+
+  /* Most modern browsers support this now. */
+  color: #9c9c9c;
+}
+
+.placeholder {
+  color: #9c9c9c !important;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## Change Autocomplete styles in Chrome
+ * ------------------------------------------------------------------- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #5b4f96;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+/* ===================================================================
+ * # buttons
+ *
+ * ------------------------------------------------------------------- */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  height: 6rem;
+  line-height: 5.6rem;
+  padding: 0 3.2rem;
+  margin: 0 .4rem 1.6rem 0;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  background-color: #d6d6d6;
+  border: 0.2rem solid #d6d6d6;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #c2c2c2;
+  border-color: #c2c2c2;
+  color: #000000;
+  outline: 0;
+}
+
+/* button primary
+ * ------------------------------------------------- */
+.btn.btn--primary,
+button.btn--primary,
+input[type="submit"].btn--primary,
+input[type="reset"].btn--primary,
+input[type="button"].btn--primary {
+  background: #5b4f96;
+  border-color: #5b4f96;
+  color: #ffffff;
+}
+
+.btn.btn--primary:hover,
+button.btn--primary:hover,
+input[type="submit"].btn--primary:hover,
+input[type="reset"].btn--primary:hover,
+input[type="button"].btn--primary:hover,
+.btn.btn--primary:focus,
+button.btn--primary:focus,
+input[type="submit"].btn--primary:focus,
+input[type="reset"].btn--primary:focus,
+input[type="button"].btn--primary:focus {
+  background: #514686;
+  border-color: #514686;
+}
+
+/* button modifiers
+ * ------------------------------------------------- */
+.btn.full-width,
+button.full-width {
+  width: 100%;
+  margin-right: 0;
+}
+
+.btn--medium,
+button.btn--medium {
+  height: 6.4rem !important;
+  line-height: 6rem !important;
+}
+
+.btn--large,
+button.btn--large {
+  height: 6.8rem !important;
+  line-height: 6.4rem !important;
+}
+
+.btn--stroke,
+button.btn--stroke {
+  background: transparent !important;
+  border: 0.2rem solid #000000;
+  color: #000000;
+}
+
+.btn--stroke:hover,
+button.btn--stroke:hover {
+  background: #000000 !important;
+  border: 0.2rem solid #000000;
+  color: #ffffff;
+}
+
+.btn--pill,
+button.btn--pill {
+  padding-left: 3.2rem !important;
+  padding-right: 3.2rem !important;
+  border-radius: 1000px !important;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

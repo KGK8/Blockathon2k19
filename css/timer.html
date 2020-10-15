@@ -1,0 +1,39 @@
+ <style type="text/css">
+     @font-face{
+        font-family: clock;
+        src:url(digital.ttf);
+     }
+     #demo{
+        font-size: 5em;
+        font-family: clock;
+        font-weight: bolder;
+        color: #ffc857;
+     }
+     .coun{
+        font-family:all ;
+        color: #ffff;
+     }
+ </style>
+ <p id="demo" class="timec" ></p>
+<script>
+var countDownDate = new Date("MARCH 9, 2019 09:00:00").getTime();
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("demo").innerHTML = days + "<span class='coun'>D</span>:" + hours + "<span class='coun' >H</span>:"
+    + minutes + "<span class='coun'>M</span>:" + seconds + "<span class='coun'>S</span> ";
+    
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "<span class='coun'>HURRYUP<br/> EVENT<br/> BEGIN....!</span>";
+    }
+}, 1000);
+</script>
